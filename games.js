@@ -78,7 +78,10 @@ function craps() {
         }
 }
 
-//The attempt at doing Blackjack, got stuck with having to have the player input whether they want a hit or not.
+//Decided to leave out blackjack for this project, needs too much Javascript.
+//The attempt at doing Blackjack, got stuck with having to have the player input whether they want a hit or not. 
+//Was able to give player and dealer initial cards in arrays and calculate points of starting cards
+
 /*function playBlackjack() {
     //troubleshooting playBlackjack() has started
     console.log("playBlackjack() started");
@@ -137,7 +140,7 @@ function craps() {
 }*/
 
 function howto() {
-
+    //checks if the text is transparent when button is pressed if it is transparent makes it not transparent and vice versa
     if (document.getElementById("howtoTitle").style.opacity == 0) {
         document.getElementById("howtoTitle").style.opacity = 1;
         document.getElementById("explainButton").innerHTML = "Hide Explanation";
