@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craps</title>
+    <script src="games.js"></script>
+    <link rel="stylesheet" href="FinalProject.css">
+</head>
+<body>
+    <h1>Welcome to the Craps Table</h1>
+    <ul class="menu">
+        <a href="Home.html">Home</a>
+        <a href="Cards.html">Card Games</a>
+        <a href="Luck.html">Luck Games</a>
+        <a href="Contact.html">Contact</a>
+    </ul>
+
+    <h2 id="gameRes"></h2>
+
+    <div class="container">
+        <div id="dice1.1" class="dice">
+            <img src="dice1.png" alt="dice1.1">
+        </div>
+        <div id="dice1.2" class="dice">
+            <img src="dice2.png" alt="dice1.2">
+        </div>
+        <div id="dice1.3" class="dice">
+            <img src="dice3.png" alt="dice1.3">
+        </div>
+        <div id="dice1.4" class="dice">
+            <img src="dice4.png" alt="dice1.4">
+        </div>
+        <div id="dice1.5" class="dice">
+            <img src="dice5.png" alt="dice1.5">
+        </div>
+        <div id="dice1.6" class="dice">
+            <img src="dice6.png" alt="dice1.6">
+        </div>
+    
+        <div id="dice2.1" class="dice2">
+            <img src="dice1.png" alt="dice2.1">
+        </div>
+        <div id="dice2.2" class="dice2">
+            <img src="dice2.png" alt="dice2.2">
+        </div>
+        <div id="dice2.3" class="dice2">
+            <img src="dice3.png" alt="dice2.3">
+        </div>
+        <div id="dice2.4" class="dice2">
+            <img src="dice4.png" alt="dice2.4">
+        </div>
+        <div id="dice2.5" class="dice2">
+            <img src="dice5.png" alt="dice2.5">
+        </div>
+        <div id="dice2.6" class="dice2">
+            <img src="dice6.png" alt="dice2.6">
+        </div>
+    </div>
+    
+    <button id="explainButton" onclick="howto();">Show Explanation</button>
+
+    <button class="playbutton" onclick="craps();">Craps</button>
+    
+
+    <h2 id="howtoTitle" class="howto">How to play Craps</h1>
+
+    <p id="howtoText" class="howto">This version of Craps has been simplified with the removal of betting.<br> You win if you get even doubles. You lose if you get 7, or 11. You tie for every other result.</p>
+</body>
+</html>
