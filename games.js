@@ -1,6 +1,6 @@
 function craps() {
-        //troubleshooting playCraps() has started
-        console.log("playCraps() started");
+        //troubleshooting craps() has started
+        console.log("Craps() started");
 
         //variables to store dice results
         var die1 = 0;
@@ -29,7 +29,7 @@ function craps() {
         //variable to hold sum to check if player wins/loses
         var sum = die1 + die2;
 
-        //outputs dice results for trouble shooting
+        //outputs dice results for troubleshooting
         console.log(die1);
         console.log(die2);
     
@@ -76,6 +76,80 @@ function craps() {
             console.log("you tie");
             document.getElementById("gameRes").innerHTML = "You Tied.";
         }
+}
+
+function slots() {
+    //Troubleshooting to see if slots() function started
+    console.log("slots() started");
+
+    //variables to store slot results
+    var slot1 = 0;
+    var slot2 = 0;
+    var slot3 = 0;
+
+    //makes all the slot images transparent
+    //slot1
+    document.getElementById("cherry1").style.opacity = 0;
+    document.getElementById("orange1").style.opacity = 0;
+    document.getElementById("strawberry1").style.opacity = 0;
+    //slot2
+    document.getElementById("cherry2").style.opacity = 0;
+    document.getElementById("orange2").style.opacity = 0;
+    document.getElementById("strawberry2").style.opacity = 0;
+    //slot3
+    document.getElementById("cherry3").style.opacity = 0;
+    document.getElementById("orange3").style.opacity = 0;
+    document.getElementById("strawberry3").style.opacity = 0;
+
+    //rolling the slot
+    slot1 = Math.ceil(3*Math.random());
+    slot2 = Math.ceil(3*Math.random());
+    slot3 = Math.ceil(3*Math.random());
+
+    //outputs dice results for troubleshooting
+    console.log(slot1);
+    console.log(slot2);
+    console.log(slot3);
+
+    //changes the opacity of the dice that was rolled so that it is visible
+    //slot1
+    if (slot1 == 1){
+        document.getElementById("cherry1").style.opacity = 1;
+    } else if (slot1 ==2){
+        document.getElementById("orange1").style.opacity = 1;
+    } else if (slot1 ==3){
+        document.getElementById("strawberry1").style.opacity = 1;
+    }
+    //slot2
+    if (slot2 == 1){
+        document.getElementById("cherry2").style.opacity = 1;
+    } else if (slot2 ==2){
+        document.getElementById("orange2").style.opacity = 1;
+    } else if (slot2 ==3){
+        document.getElementById("strawberry2").style.opacity = 1;
+    }
+    //slot3
+    if (slot3 == 1){
+        document.getElementById("cherry3").style.opacity = 1;
+    } else if (slot3 ==2){
+        document.getElementById("orange3").style.opacity = 1;
+    } else if (slot3 ==3){
+        document.getElementById("strawberry3").style.opacity = 1;
+    }
+
+    if(slot1 == 1 && slot2 == 1 && slot3 == 1){
+        console.log("Cherry Win");
+        document.getElementById("gameRes").innerHTML = "Cherry Win";
+    } else if(slot1 == 2 && slot2 == 2 && slot3 == 2){
+        console.log("Orange Win");
+        document.getElementById("gameRes").innerHTML = "Orange Win";
+    } else if(slot1 == 3 && slot2 == 3 && slot3 == 3){
+        console.log("Strawberry Win");
+        document.getElementById("gameRes").innerHTML = "Strawberry Win";
+    } else {
+        console.log("You Lose!");
+        document.getElementById("gameRes").innerHTML = "You Lose!";
+    }
 }
 
 //Decided to leave out blackjack for this project, needs too much Javascript.

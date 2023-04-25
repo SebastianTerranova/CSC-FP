@@ -5,15 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games of Luck</title>
+    <script src="games.js"></script>
     <link rel="stylesheet" href="FinalProject.css">
 </head>
 <body>
-    <h1>Welcome to the Roulette Table</h1>
+    <h1>Welcome to the Slot machine</h1>
     <ul class="menu">
         <a href="Home.html">Home</a>
         <a href="Dice.html">Dice Games</a>
         <!--<a href="Cards.html">Card Games</a>-->
         <a href="Contact.html">Contact</a>
     </ul>
+
+    <h2 id="gameRes"></h2> <!--Shows result of the game-->
+
+    <div class="container" style="background-color: darkblue;"> <!--Images for the slots-->
+        <div id="cherry1" class="slot">
+            <img src="cherries.png" alt="cherry1">
+        </div>
+        <div id="orange1" class="slot">
+            <img src="orange.png" alt="orange1">
+        </div>
+        <div id="strawberry1" class="slot">
+            <img src="strawberry.png" alt="strawberry1">
+        </div>
+
+        <div id="cherry2" class="slot2">
+            <img src="cherries.png" alt="cherry2">
+        </div>
+        <div id="orange2" class="slot2">
+            <img src="orange.png" alt="orange2">
+        </div>
+        <div id="strawberry2" class="slot2">
+            <img src="strawberry.png" alt="strawberry2">
+        </div>
+
+        <div id="cherry3" class="slot3">
+            <img src="cherries.png" alt="cherry3">
+        </div>
+        <div id="orange3" class="slot3">
+            <img src="orange.png" alt="orange3">
+        </div>
+        <div id="strawberry3" class="slot3">
+            <img src="strawberry.png" alt="strawberry3">
+        </div>
+    </div>
+
+    <button id="explainButton" onclick="howto();">Show Explanation</button>
+
+    <button class="slotplaybutton" onclick="slots();">Slots</button>
+
+    <h2 id="howtoTitle" class="howto">How to play Slots</h1>
+
+    <p id="howtoText" class="howto">This version of Slots has been simplified with the removal of betting.<br>If you get three of a kind you WIN!<br>Otherwise you lose.</p>
 </body>
 </html>

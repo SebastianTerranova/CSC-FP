@@ -4,9 +4,6 @@ HTML:
 Home.html
 will display info about the site and eventually handle the currency for the site
 
-Cards.html
-Holds all the games that deal with cards including Blackjack
-
 Dice.html
 Holds all the games that deal with dice including Craps
 
